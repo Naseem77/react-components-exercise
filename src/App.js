@@ -8,7 +8,13 @@ import Menu from './components/Menu';
 
 // Spot Check 1
 export class Sum extends Component {
-  // your code here...
+  render() {
+    let num1 = 57
+    let num2 = -12
+    return (
+      <div>The sum is {num1 + num2}</div>
+    );
+  }
 }
 
 // Spot Check 2
@@ -24,7 +30,9 @@ class Nav extends Component {
 }
 
 class LandingPage extends Component {
-  // your code here...
+  render() {
+    return <h1>Welcome!</h1>
+  }
 }
 
 // Spot Check 3
@@ -40,26 +48,49 @@ class Profile extends Component {
 }
 
 // Spot Check 4
-export const Banner = function () {
-
-}
+export const Banner = () => <div className="banner">THE LOGO</div>
 
 
 // Spot Check 5
 export class About extends Component {
-  /* your code here... */
+  render() {
+    return (
+      <div>
+        <SignUp />
+        <Blurb />
+      </div>
+    )
+  }
 }
 
 
 export class SignUp extends Component {
-  /* your code here... */
+  render() {
+    return (
+      <div>
+        <input type="text" placeholder="Username" />
+      </div>
+    )
+  }
 }
 
 export class Blurb extends Component {
-  /* your code here... */
+  render() {
+    return <div>This is a great site.</div>
+  }
 }
 
-
+export class SecondApp extends Component {
+  render() {
+    return (
+      <div className="exercise" id="ex-4">
+        <NavBar />
+        <Menu />
+        <Checkout />
+      </div>
+    );
+  }
+}
 
 export class App extends Component {
 
@@ -76,7 +107,7 @@ export class App extends Component {
           <h4 className="ex-title">Spotcheck 2</h4>
           <div className="exercise" id="spotcheck-2">
             <Nav />
-            {/* your code here... */}
+            <LandingPage />
           </div>
         </div>
 
@@ -90,35 +121,35 @@ export class App extends Component {
         <div className="ex-space">
           <h4 className="ex-title">Spotcheck 4</h4>
           <div className="exercise" id="spotcheck-4">
-            {/* your code here... */}
+            <Banner />
           </div>
         </div>
 
         <div className="ex-space">
           <h4 className="ex-title">Spotcheck 5</h4>
           <div className="exercise" id="spotcheck-5">
-            {/* your code here... */}
+            <About />
           </div>
         </div>
 
         <div className="ex-space">
           <h4 className="ex-title">Exercise 1</h4>
           <div className="exercise" id="ex-1">
-            {/* your code here... */}
+            <Dummy />
           </div>
         </div>
 
         <div className="ex-space">
           <h4 className="ex-title">Exercise 2</h4>
           <div className="exercise" id="ex-2">
-            {/* your code here... */}
+            <Spamalot />
           </div>
         </div>
 
         <div className="ex-space">
           <h4 className="ex-title">Exercise 4</h4>
           <div className="exercise" id="ex-4">
-            {/* your code here... */}
+            <SecondApp />
           </div>
         </div>
       </div>
